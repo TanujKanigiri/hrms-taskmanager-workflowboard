@@ -1,28 +1,49 @@
 # HRMS Task Manager – Workflow Board
 
 ## Overview
-This repository contains the Task Manager Workflow Board module of the HRMS application.
-It provides a Kanban-style board to manage tasks across multiple statuses.
+This repository contains the Task Manager Workflow Board sub-module of the HRMS application.
+The module follows a Kanban-style approach to manage tasks across different workflow stages.
 
-## Features
-- Workflow Board (Todo, In Progress, In Review, Completed)
-- Task status lifecycle management
-- REST APIs using Spring Boot
-- Frontend using Next.js (App Router)
+## Scope of This Repository
+This repository focuses on the **Workflow Board functionality** inside the Task Manager module.
+Only task-related frontend and backend components are included for demonstration and review.
+
+## Key Features
+- Workflow Board with task statuses:
+  - Todo
+  - In Progress
+  - In Review
+  - Completed
+- Task creation and status-based visualization
+- Backend REST APIs for task management
+- Modular frontend implementation using Next.js App Router
 
 ## Tech Stack
-- Backend: Spring Boot, JPA, MySQL
-- Frontend: Next.js, TypeScript
-- Architecture: REST-based modular design
+### Backend
+- Spring Boot
+- JPA / Hibernate
+- MySQL
+- REST APIs
+
+### Frontend
+- Next.js (App Router)
+- TypeScript
+- Component-based architecture
 
 ## Folder Structure
-- backend/ : Spring Boot application
-- frontend/ : Task Manager workflow board UI
+backend/ -> Spring Boot application (Task module)
+frontend/ -> Next.js application (Task Manager UI)
 
-## Workflow
-- Tasks are displayed based on their status
-- Status changes are handled via backend APIs
-- Frontend reflects updated task state
+
+## Frontend Implementation Details
+The following frontend routes were implemented as part of this module:
+src/app/dashboard/tasks/board
+src/app/dashboard/tasks/create
+
+## Workflow Explanation
+- Tasks are fetched from backend APIs based on their status
+- Workflow board displays tasks in corresponding columns
+- Status changes are designed to be handled through backend APIs
 
 ## Note
 This module was developed as part of the HRMS Task Management system.
