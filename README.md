@@ -31,13 +31,13 @@ Only task-related frontend and backend components are included for demonstration
 - Component-based architecture
 
 ## Folder Structure
-backend/ -> Spring Boot application (Task module)
+backend/ -> Spring Boot application (Task module), 
 frontend/ -> Next.js application (Task Manager UI)
 
 
 ## Frontend Implementation Details
 The following frontend routes were implemented as part of this module:
-src/app/dashboard/tasks/board
+src/app/dashboard/tasks/board, 
 src/app/dashboard/tasks/create
 
 ## Workflow Explanation
